@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-      <div class="col-3" *ngFor="let item of cars">
+      <div class="col-4" *ngFor="let item of cars">
         <img [src]="item.image" alt="" srcset="" />
   
         <p>
@@ -8,18 +8,18 @@
         </p>
   
         <p>
-            {{ item.marque }}€
+            {{ item.marque }}
         </p>
         <p>
             {{ item.siege }}
         </p>
     
         <p>
-             {{ item.color }}€
+             {{ item.color }}
         </p>
           
         <button
-          class="btn btn-primary d-block m-auto"
+          
           (click)="showDetails(item)"
         >
           Details

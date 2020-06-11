@@ -53,6 +53,6 @@ export class CarsComponent implements OnInit {
   }
 
   showDetails(car){
-    this.router.navigate(["product-carsdetails", JSON.stringify(car)]);
+    this.router.navigate(["carsdetails", JSON.stringify(car)]);
   }
 }

@@ -1,1 +1,31 @@
-<p>cars-details works!</p>
+<div class="container">
+    <div class="row">
+        <img [src]="car.image" alt="" srcset="" />
+    </div>
+    <div class="row">
+        <div class="col-3">
+            matricule :
+            <p>
+              {{ car.matricule }}
+            </p>
+        </div>
+        <div class="col-3">
+            marque :
+            <p>
+              {{ car.marque }}
+            </p>
+        </div>
+        <div class="col-3">
+            siege :
+            <p>
+              {{ car.siege }}
+            </p>
+        </div>
+        <div class="col-3">
+            color :
+            <p>
+              {{ car.color }}
+            </p>
+        </div>
+    </div>
+  </div>
