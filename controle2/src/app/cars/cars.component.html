@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+      <div class="col-3" *ngFor="let item of cars">
+        <img [src]="item.image" alt="" srcset="" />
+  
+        <p>
+          {{ item.matricule }}
+        </p>
+  
+        <p>
+            {{ item.marque }}€
+        </p>
+        <p>
+            {{ item.siege }}
+        </p>
+    
+        <p>
+             {{ item.color }}€
+        </p>
+          
+        <button
+          class="btn btn-primary d-block m-auto"
+          (click)="showDetails(item)"
+        >
+          Details
+        </button>
+      </div>
+    </div>
+  </div>
